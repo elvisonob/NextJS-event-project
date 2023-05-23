@@ -1,9 +1,12 @@
-const StartingPage = () => {
+import { getFeaturedEvents } from '../dummy-data';
+
+const HomePage = () => {
+  const featuredEvents = getFeaturedEvents();
   return (
     <div>
-      <h1>Starting Page</h1>
+      <h1>{featuredEvents}</h1>
     </div>
   );
 };
 
-export default StartingPage;
+export default HomePage;
